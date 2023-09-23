@@ -1,0 +1,9 @@
+pandas
+numpy
+seaborn
+# -e .
+
+
+- e this allows pip to install the package in an editable way. However, 
+this is not necessary because we are using poetry to manage the dependencies
+'''
