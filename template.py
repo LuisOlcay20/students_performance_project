@@ -28,7 +28,7 @@ list_of_files = [
     "app.py",
     "requirements.txt",
     "setup.py",
-
+    f"notebook/data/student.csv"
     ]
 
 
