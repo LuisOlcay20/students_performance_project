@@ -1,2 +1,3 @@
 # students_perfromance
-End to end MLProject ~ from scratch to deployment
+
+#### 1. Project Structure [click here](https://github.com/)
