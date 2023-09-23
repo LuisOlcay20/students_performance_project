@@ -4,6 +4,7 @@ including the file name and line number where the error occurred.
 '''
 
 import sys #used to manipulate different parts of the python runtime environment
+from src.logger import logger
 
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()
