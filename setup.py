@@ -1,5 +1,6 @@
 '''
-This file allow to package the project to allow the distribution with pip
+This file allow to package the project to allow the distribution with pip. It would not be used in the project because
+we are using poetry.
 '''
 ''''''
 from setuptools import find_packages, setup
