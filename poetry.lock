@@ -211,6 +211,48 @@ webencodings = "*"
 css = ["tinycss2 (>=1.1.0,<1.2)"]
 
 [[package]]
+name = "catboost"
+version = "1.2.2"
+description = "CatBoost Python Package"
+optional = false
+python-versions = "*"
+files = [
+    {file = "catboost-1.2.2-cp310-cp310-macosx_11_0_universal2.whl", hash = "sha256:806189e8491d3ba5f6a24875689da2f997c95a21d2d32e92144ea391882a75a0"},
+    {file = "catboost-1.2.2-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:2108673d05c6e961a1298aea0c722d6c7a0acca112d6ec14cf01a274486af6af"},
+    {file = "catboost-1.2.2-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:0b17019ce42939a153895cd44430b50c49e3fa7ab65109f98c9a7df461359705"},
+    {file = "catboost-1.2.2-cp310-cp310-win_amd64.whl", hash = "sha256:dab0ad5f9dec575b7949ba58cc2ec029128d90611c45a6caa03f9d52d28f3420"},
+    {file = "catboost-1.2.2-cp311-cp311-macosx_11_0_universal2.whl", hash = "sha256:83f59b7526e5330a96d70f25e162c7a4ab9d9c9def234b48e325f1098c854c0f"},
+    {file = "catboost-1.2.2-cp311-cp311-manylinux2014_aarch64.whl", hash = "sha256:467b6e0064fe5a6aa7efc7f86a91dfe1266df91f623256db792095964b644d0e"},
+    {file = "catboost-1.2.2-cp311-cp311-manylinux2014_x86_64.whl", hash = "sha256:db151f661305b13d81d460df1f01580085671a24a71300abbbe17dc8d1c152a0"},
+    {file = "catboost-1.2.2-cp311-cp311-win_amd64.whl", hash = "sha256:0b8b5cdc2f1e1452018867a55902dc440d8a67a0869d5258f59b290d917cd73a"},
+    {file = "catboost-1.2.2-cp37-cp37m-macosx_11_0_universal2.whl", hash = "sha256:d82d2a2914a6dec8b95cc107d9b6686ad00b0177144561bce14e44ef4c91a488"},
+    {file = "catboost-1.2.2-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:d2a281797abc6e6572621c4c99a3aded9ef32b25bfdbf7824021f84f9fbebd63"},
+    {file = "catboost-1.2.2-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:d0f0e39ab9cb1e5287c785bc8a7448b2ebeff6257f4509693008043b8b24e53e"},
+    {file = "catboost-1.2.2-cp37-cp37m-win_amd64.whl", hash = "sha256:7714aeef4c079592f64b5cb79e78c0b5c636784b41bca882f5ff6d8f4481c734"},
+    {file = "catboost-1.2.2-cp38-cp38-macosx_11_0_universal2.whl", hash = "sha256:aa758d5a3cb1c4a5f87d2399ccc7879b63f3db711fc34b1c285b5499c4112234"},
+    {file = "catboost-1.2.2-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:6ad09ae45d69bc0ea8685cb92e6df8db1f99796392bb54ba588c2291890eea66"},
+    {file = "catboost-1.2.2-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:7a57052030cb0a7b8cc1db98d6de3c00f864b6f36275bc0608d85f9ea04df751"},
+    {file = "catboost-1.2.2-cp38-cp38-win_amd64.whl", hash = "sha256:fb0a8902b78179d9008e608f57626195726cd7328ac052f1ee2e46663bb8f964"},
+    {file = "catboost-1.2.2-cp39-cp39-macosx_11_0_universal2.whl", hash = "sha256:2a7c3a081af1da25c3d25e3be249ac85a979c5dd4ab4fba5c4f5742b83c8b434"},
+    {file = "catboost-1.2.2-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:85459ee572e3e81f4cbde76b9ba08c3a2c9c31586861947bdbe95dbc29672205"},
+    {file = "catboost-1.2.2-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:f6f3ae50f84a177455d0739ae08333db4fe2642278a8c287be95f2d6cdc9cdf8"},
+    {file = "catboost-1.2.2-cp39-cp39-win_amd64.whl", hash = "sha256:1c0c3973542c5c46898c157a9f545ad80a36b8d8b17d92424a07376818911162"},
+    {file = "catboost-1.2.2.tar.gz", hash = "sha256:c9381af807369fa6a24288a028eebbcfcec939c897ffd95729ca0f891d1d49c4"},
+]
+
+[package.dependencies]
+graphviz = "*"
+matplotlib = "*"
+numpy = ">=1.16.0"
+pandas = ">=0.24"
+plotly = "*"
+scipy = "*"
+six = "*"
+
+[package.extras]
+widget = ["ipython", "ipywidgets (>=7.0,<9.0)", "traitlets"]
+
+[[package]]
 name = "certifi"
 version = "2023.7.22"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -654,6 +696,22 @@ files = [
     {file = "fqdn-1.5.1-py3-none-any.whl", hash = "sha256:3a179af3761e4df6eb2e026ff9e1a3033d3587bf980a0b1b2e1e5d08d7358014"},
     {file = "fqdn-1.5.1.tar.gz", hash = "sha256:105ed3677e767fb5ca086a0c1f4bb66ebc3c100be518f0e0d755d9eae164d89f"},
 ]
+
+[[package]]
+name = "graphviz"
+version = "0.20.1"
+description = "Simple Python interface for Graphviz"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "graphviz-0.20.1-py3-none-any.whl", hash = "sha256:587c58a223b51611c0cf461132da386edd896a029524ca61a1462b880bf97977"},
+    {file = "graphviz-0.20.1.zip", hash = "sha256:8c58f14adaa3b947daf26c19bc1e98c4e0702cdc31cf99153e6f06904d492bf8"},
+]
+
+[package.extras]
+dev = ["flake8", "pep8-naming", "tox (>=3)", "twine", "wheel"]
+docs = ["sphinx (>=5)", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
+test = ["coverage", "mock (>=4)", "pytest (>=7)", "pytest-cov", "pytest-mock (>=3)"]
 
 [[package]]
 name = "idna"
@@ -1853,6 +1911,21 @@ docs = ["furo (>=2023.7.26)", "proselint (>=0.13)", "sphinx (>=7.1.1)", "sphinx-
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-cov (>=4.1)", "pytest-mock (>=3.11.1)"]
 
 [[package]]
+name = "plotly"
+version = "5.17.0"
+description = "An open-source, interactive data visualization library for Python"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "plotly-5.17.0-py2.py3-none-any.whl", hash = "sha256:7c84cdf11da162423da957bb093287134f2d6f170eb9a74f1459f825892247c3"},
+    {file = "plotly-5.17.0.tar.gz", hash = "sha256:290d796bf7bab87aad184fe24b86096234c4c95dcca6ecbca02d02bdf17d3d97"},
+]
+
+[package.dependencies]
+packaging = "*"
+tenacity = ">=6.2.0"
+
+[[package]]
 name = "prometheus-client"
 version = "0.17.1"
 description = "Python client for the Prometheus monitoring system."
@@ -2502,6 +2575,27 @@ doc = ["jupytext", "matplotlib (>2)", "myst-nb", "numpydoc", "pooch", "pydata-sp
 test = ["asv", "gmpy2", "mpmath", "pooch", "pytest", "pytest-cov", "pytest-timeout", "pytest-xdist", "scikit-umfpack", "threadpoolctl"]
 
 [[package]]
+name = "seaborn"
+version = "0.13.0"
+description = "Statistical data visualization"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "seaborn-0.13.0-py3-none-any.whl", hash = "sha256:70d740828c48de0f402bb17234e475eda687e3c65f4383ea25d0cc4728f7772e"},
+    {file = "seaborn-0.13.0.tar.gz", hash = "sha256:0e76abd2ec291c655b516703c6a022f0fd5afed26c8e714e8baef48150f73598"},
+]
+
+[package.dependencies]
+matplotlib = ">=3.3,<3.6.1 || >3.6.1"
+numpy = ">=1.20,<1.24.0 || >1.24.0"
+pandas = ">=1.2"
+
+[package.extras]
+dev = ["flake8", "flit", "mypy", "pandas-stubs", "pre-commit", "pytest", "pytest-cov", "pytest-xdist"]
+docs = ["ipykernel", "nbconvert", "numpydoc", "pydata_sphinx_theme (==0.10.0rc2)", "pyyaml", "sphinx (<6.0.0)", "sphinx-copybutton", "sphinx-design", "sphinx-issues"]
+stats = ["scipy (>=1.7)", "statsmodels (>=0.12)"]
+
+[[package]]
 name = "send2trash"
 version = "1.8.2"
 description = "Send file to trash natively under Mac OS X, Windows and Linux"
@@ -2606,6 +2700,20 @@ pure-eval = "*"
 
 [package.extras]
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
+
+[[package]]
+name = "tenacity"
+version = "8.2.3"
+description = "Retry code until it succeeds"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tenacity-8.2.3-py3-none-any.whl", hash = "sha256:ce510e327a630c9e1beaf17d42e6ffacc88185044ad85cf74c0a8887c6a0f88c"},
+    {file = "tenacity-8.2.3.tar.gz", hash = "sha256:5398ef0d78e63f40007c1fb4c0bff96e1911394d2fa8d194f77619c05ff6cc8a"},
+]
+
+[package.extras]
+doc = ["reno", "sphinx", "tornado (>=4.5)"]
 
 [[package]]
 name = "terminado"
@@ -2820,6 +2928,33 @@ files = [
 ]
 
 [[package]]
+name = "xgboost"
+version = "2.0.0"
+description = "XGBoost Python Package"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "xgboost-2.0.0-py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.macosx_12_0_x86_64.whl", hash = "sha256:602134f13df6ac0747191febe29b020699c3ef7eae7c35bb55004b3288c21bb4"},
+    {file = "xgboost-2.0.0-py3-none-macosx_12_0_arm64.whl", hash = "sha256:0a1041718a0d7026aa51c9abc5270f22620b9ac930c0785c2178216fe073c512"},
+    {file = "xgboost-2.0.0-py3-none-manylinux2014_aarch64.whl", hash = "sha256:b73b954096775b7012dec7834420e051f98c51529263b5724386858bb54300af"},
+    {file = "xgboost-2.0.0-py3-none-manylinux2014_x86_64.whl", hash = "sha256:5bf02fa47d727eb5e8e71e39f3c21a5d46490e43b3d985e24f7a0126ef33eabc"},
+    {file = "xgboost-2.0.0-py3-none-win_amd64.whl", hash = "sha256:fe83a3a47dcb56880f3957e0cdb7780d5f886007d9cd10c51a9c0a30d9e970bc"},
+    {file = "xgboost-2.0.0.tar.gz", hash = "sha256:a89a4504c486043dbfdad41e5f426e2a0b4e5494a5f3ca99cf7ad85a665c79e7"},
+]
+
+[package.dependencies]
+numpy = "*"
+scipy = "*"
+
+[package.extras]
+dask = ["dask", "distributed", "pandas"]
+datatable = ["datatable"]
+pandas = ["pandas"]
+plotting = ["graphviz", "matplotlib"]
+pyspark = ["cloudpickle", "pyspark", "scikit-learn"]
+scikit-learn = ["scikit-learn"]
+
+[[package]]
 name = "zipp"
 version = "3.17.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
@@ -2837,4 +2972,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9,<3.13"
-content-hash = "cb41f0d97c457cfd5a9bbad5bc35daac2eebaa85d83d5b5cd30d32774a14d2cc"
+content-hash = "58d6fc3be0b184e2b85e406f5d819854f691814b0fa3a7fe8b8874509a5b4979"
